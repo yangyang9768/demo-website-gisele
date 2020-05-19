@@ -74,15 +74,20 @@ Version: 1.0.0
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-
+@font-face {
+  font-family: "Neuton";
+  src: url("../fonts/Neuton.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --main-color-one: #0e73b9;
   --main-color-two: #16327a;
   --secondary-color: #e41b14;
   --heading-color: #000000;
   --paragraph-color: #7e7e7e;
-  --heading-font: "Playfair Display", serif;
-  --body-font: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", Neuton;
+  --body-font: "Poppins", Neuton;
 }
 
 html {
@@ -112,6 +117,7 @@ body {
 h1 {
   font-size: 48px;
   line-height: 1.0833333333;
+  hyphens: none;
 }
 
 h2 {
@@ -141,8 +147,8 @@ h6 {
 
 p {
   color: var(--paragraph-color);
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: none;
+  hyphens: none;
   margin-bottom: 10px;
   line-height: 24px;
 }
@@ -187,7 +193,7 @@ ol li {
 ol li:before {
   counter-increment: counter;
   content: counter(counter);
-  font-weight: 500;
+  font-weight: 400;
   margin-right: 10px;
 }
 
@@ -270,7 +276,9 @@ code {
 .site-main .post-navigation {
   clear: both;
 }
- .giselepic{display: none;}
+.giselepic {
+  display: none;
+}
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -334,7 +342,7 @@ code {
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 400ld;
   height: auto;
   left: 5px;
   line-height: normal;
@@ -951,7 +959,7 @@ code {
   border: 1px solid #e2e2e2;
   line-height: 40px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
   transition: 0.3s ease-in;
 }
 
@@ -1104,7 +1112,7 @@ ul {
 }
 
 .post-password-form label {
-  font-weight: 600;
+  font-weight: 400;
   color: #333;
 }
 
@@ -1114,7 +1122,7 @@ ul {
   background-color: var(--main-color-one);
   color: #fff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
   border: none;
   cursor: pointer;
@@ -1383,7 +1391,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .breadcrumb-area .page-title {
   font-size: 36px;
   line-height: 46px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 15px;
@@ -1404,7 +1412,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   position: relative;
   padding-left: 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
 .breadcrumb-area .page-list li:first-child {
@@ -1420,7 +1428,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   position: absolute;
   left: 7px;
   top: 0;
-  font-weight: 700;
+  font-weight: 400;
   content: "/";
   font-family: "fontawesome";
 }
@@ -1450,7 +1458,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .comments-area .comments-title {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 38px;
   text-transform: uppercase;
 }
@@ -1533,7 +1541,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .comments-area .comment-list li .single-comment-wrap .content .title {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--heading-font);
 }
 
@@ -1563,7 +1571,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .comments-area .comment-reply-title {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .comments-area .form-submit {
@@ -1637,7 +1645,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .widget .widget-title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 26px;
   margin-bottom: 25px;
   text-transform: capitalize;
@@ -1792,7 +1800,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .widget_author_meta .content .name {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .widget_author_meta .content p {
@@ -2001,11 +2009,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .widget .recent_post_item li.single-recent-post-item .content .title {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .widget .recent_post_item li.single-recent-post-item .content .time {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .widget .recent_post_item li.single-recent-post-item .content .time i {
   padding-right: 5px;
@@ -2074,7 +2082,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .widget-testimonial .author-meta .content .name {
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   margin-bottom: 0;
 }
@@ -2113,7 +2121,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   top: 12px;
   content: "";
   font-family: "fontawesome";
-  font-weight: 900;
+  font-weight: 400;
 }
 
 /*----------------------------------------------
@@ -2459,7 +2467,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   color: var(--main-color-one);
 }
 .navbar-area .nav-container .nav-right-content ul li.nav-btn .btn-boxed {
-  font-weight: 600;
+  font-weight: 400;
   text-transform: capitalize;
   border-radius: 5px;
   background-color: var(--main-color-one);
@@ -2468,7 +2476,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   background-color: var(--secondary-color);
 }
 .navbar-area .nav-container .navbar-brand .site-title {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 30px;
   font-family: var(--heading-font);
   line-height: 90px;
@@ -2484,7 +2492,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-size: 14px;
   font-family: var(--body-font);
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 70px;
 }
 .navbar-area .nav-container .navbar-collapse .navbar-nav li + li {
@@ -2516,7 +2524,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   right: 0;
   top: 50%;
   content: "";
-  font-weight: 700;
+  font-weight: 400;
   font-family: "fontawesome";
   /* IE 9 */
   /* Chrome, Safari, Opera */
@@ -2967,7 +2975,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .info-items li {
   display: inline-block;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 22px;
   color: #fff;
   transition: all 0.3s ease-in;
@@ -2995,14 +3003,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .info-items-02 li .title {
   color: #fff;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 15px;
   margin-right: 15px;
 }
 .info-items-02 li .number {
   color: #fff;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .info-items-02 li .number span {
   color: var(--secondary-color);
@@ -3141,7 +3149,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   z-index: 0;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   padding-left: 70px;
@@ -3251,7 +3259,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .header-area .header-inner-02 .header-bottom .btn-wrapper .campign-btn {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   align-items: center;
   height: 100%;
@@ -3285,7 +3293,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .header-area .header-inner-04 .contact-info .btn-wrapper .boxed-btn {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: capitalize;
   color: #fff;
   min-width: 160px;
@@ -3295,7 +3303,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-size: 72px;
   line-height: 70px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 .header-area .title.style-01::after {
@@ -3463,14 +3471,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .error-404 .title {
   font-size: 200px;
   line-height: 160px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 45px;
   color: var(--main-color-one);
 }
 .error-404 .subtitle {
   font-size: 24px;
   line-height: 34px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .error-404 .search-form {
@@ -3534,7 +3542,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .support-content .content .title {
   font-size: 48px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 400;
   max-width: 550px;
   margin: auto;
   margin-bottom: 30px;
@@ -3563,7 +3571,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .charity-content .title {
   font-size: 48px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -3611,13 +3619,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .call-to-action-inner .title {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
 }
 .call-to-action-inner .subtitle {
   font-size: 48px;
   line-height: 58px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -3673,7 +3681,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .dolar-campaign .dolar-content .title {
   font-size: 100px;
   line-height: 110px;
-  font-weight: 800;
+  font-weight: 400;
   color: #fff;
   margin-bottom: 30px;
 }
@@ -3785,7 +3793,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .request-page-form-wrap .section-title .title {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 34px;
 }
 
@@ -3805,13 +3813,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .request-page-form .form-group .form-control::placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .request-page-form .submit-btn {
   background-color: var(--secondary-color);
   width: 100%;
   padding: 19px 40px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   color: #fff;
   transition: all 0.3s ease-in-out;
@@ -4140,7 +4148,7 @@ Client Area
 }
 .preloader-inner .cancel-preloader a {
   background-color: var(--main-color-one);
-  font-weight: 600;
+  font-weight: 400;
   text-transform: capitalize;
   color: #fff;
   width: 200px;
@@ -4171,7 +4179,7 @@ Client Area
   text-transform: capitalize;
   text-align: center;
   transition: all 0.3s ease-in;
-  font-weight: 600;
+  font-weight: 400;
 }
 .btn-wrapper .boxed-btn.white:hover {
   background-color: #fff;
@@ -4219,7 +4227,7 @@ Client Area
 .btn-wrapper .read-btn {
   color: var(--main-color-one);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -4325,7 +4333,7 @@ Client Area
 .blog-classic-item-01 .content .title {
   font-size: 30px;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 400;
   transition: all 500ms;
 }
 .blog-classic-item-01 .content .title:hover {
@@ -4434,7 +4442,7 @@ Client Area
 }
 .blog-classic-item-01.format-quote .quote-post-type .title {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   margin-bottom: 0px;
 }
@@ -4456,7 +4464,7 @@ Client Area
 .blog-details-item .title {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .blog-details-item p {
@@ -4474,7 +4482,7 @@ Client Area
   margin-bottom: 0px;
   font-size: 16px;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: 400;
   color: #7e7e7e;
 }
 .blog-details-item blockquote:not([class]) .icon {
@@ -4520,7 +4528,7 @@ Client Area
 }
 .blog-details-footer .title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--heading-color);
 }
 .blog-details-footer .left .tags {
@@ -4582,7 +4590,7 @@ Client Area
   display: block;
   font-size: 16px;
   line-height: 28px;
-  font-weight: 700;
+  font-weight: 400;
   background-color: #f5f5f5;
   padding: 14px 30px;
   cursor: pointer;
@@ -4625,7 +4633,7 @@ Client Area
 }
 .single-contact-item .content .title {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
   margin-bottom: 10px;
   display: block;
@@ -4633,7 +4641,7 @@ Client Area
 }
 .single-contact-item .content .details {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .contact-info-list {
@@ -4740,7 +4748,7 @@ Client Area
   font-size: 100px;
   line-height: 100px;
   color: #706d5f;
-  font-weight: 900;
+  font-weight: 400;
   font-family: "fontawesome";
   content: "";
   z-index: -1;
@@ -4777,7 +4785,7 @@ Client Area
 .single-counterup-02 .count-wrap {
   font-size: 42px;
   line-height: 52px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   font-family: var(--heading-font);
   margin-bottom: 15px;
@@ -4785,7 +4793,7 @@ Client Area
 .single-counterup-02 .title {
   font-size: 24px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .single-counterup-block-with-img {
@@ -4821,7 +4829,7 @@ Client Area
   line-height: 130px;
   color: var(--main-color-one);
   font-family: var(--heading-font);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .single-counterup-01 {
@@ -4862,7 +4870,7 @@ Client Area
 .single-counterup-01 .content .count-wrap {
   font-size: 42px;
   line-height: 52px;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   font-family: var(--heading-font);
   margin-bottom: 15px;
@@ -4915,7 +4923,7 @@ Client Area
 .single-support-item .content .title {
   font-size: 24px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
 }
 .single-support-item .content p {
   max-width: 280px;
@@ -5028,7 +5036,7 @@ Client Area
 .volunteer-single-item .content .title {
   color: #fff;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 .volunteer-single-item .content p {
@@ -5053,7 +5061,7 @@ Client Area
 .section-title-inner .title {
   font-size: 40px;
   line-height: 42px;
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
   font-family: var(--heading-font);
   margin-bottom: 18px;
@@ -5063,7 +5071,7 @@ Client Area
 }
 .section-title-inner .subtitle {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   position: relative;
@@ -5093,7 +5101,7 @@ Client Area
 .section-title .title {
   font-size: 48px;
   line-height: 58px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: var(--heading-font);
   margin-bottom: 14px;
 }
@@ -5102,7 +5110,7 @@ Client Area
 }
 .section-title .subtitle {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   position: relative;
@@ -5113,17 +5121,17 @@ Client Area
 }
 .section-title span {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--body-font);
   color: var(--main-color-one);
 }
 .section-title p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .section-title .section-para {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 26px;
 }
 
@@ -5196,7 +5204,7 @@ Client Area
 .single-icon-box-01 .content .title {
   font-size: 22px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .single-icon-box-01 .content p {
   transition: all 0.5s;
@@ -5239,7 +5247,7 @@ Client Area
 .single-icon-box-02 .content .title {
   font-size: 24px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 400;
   transition: all 500ms;
 }
 .social-link ul {
@@ -5416,12 +5424,12 @@ Client Area
 .single-recent-case-study-01 .img-wrapper .hover .title {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 400;
   transition: all 500ms;
 }
 .single-recent-case-study-01 .img-wrapper .hover .read-more {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 500ms;
 }
 .single-recent-case-study-01 .img-wrapper .hover .read-more:hover {
@@ -5506,7 +5514,7 @@ Client Area
 .single-case-item-02 .thumb .hover .title {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 400;
   transition: all 500ms;
 }
 .single-case-item-02 .thumb .hover .title:hover {
@@ -5552,7 +5560,7 @@ Client Area
   font-size: 24px;
   line-height: 18px;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .single-event-item .content .post-mate .post-month {
   color: #fff;
@@ -5561,7 +5569,7 @@ Client Area
 }
 .single-event-item .content .author-mate .title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 30px;
 }
 .single-event-item .content .author-mate p i {
@@ -5636,7 +5644,7 @@ Client Area
 }
 .single-help-fulfill-item .content .title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 34px;
   color: var(--heading-color);
   margin-bottom: 16px;
@@ -5695,7 +5703,7 @@ Client Area
   font-family: var(--heading-font);
   font-size: 30px;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 .single-testimonial-item .content .description {
@@ -5719,7 +5727,7 @@ Client Area
   text-transform: uppercase;
   font-family: var(--body-font);
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0;
 }
 .single-testimonial-item .content .author-details .author-meta .designation {
@@ -5767,14 +5775,14 @@ Client Area
 .single-testimonial-item-02 .content .author-details .author-meta .title {
   font-size: 18px;
   line-height: 22px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: capitalize;
   font-family: var(--body-font);
   color: var(--main-color-one);
 }
 .single-testimonial-item-02 .content .author-details .author-meta .designation {
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
 }
@@ -5796,7 +5804,7 @@ Client Area
   background-color: #14b3e4;
   padding: 5px 10px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .progress-item .single-progressbar .progressbar .percentCount::after {
   position: absolute;
@@ -5813,7 +5821,7 @@ Client Area
 }
 .donation_wrapper .title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
   font-size: 25px;
@@ -5843,7 +5851,7 @@ Client Area
 .donation_wrapper .amount_wrapper .suffix {
   padding: 8px;
   border: 0;
-  font-weight: bold;
+  font-weight: 400ld;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   background: transparent;
   width: 100%;
@@ -5866,7 +5874,7 @@ Client Area
   border: 0;
   color: #fff;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) inset,
@@ -6005,7 +6013,7 @@ Client Area
 }
 .vision-single-item .content .title {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
 }
 .vision-single-item .content p {
   max-width: 285px;
@@ -6028,7 +6036,7 @@ Client Area
 .vision-single-item-02 .content .title {
   font-size: 22px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 400;
   transition: all 500ms;
   margin-bottom: 5px;
 }
@@ -6039,7 +6047,7 @@ Client Area
 }
 .vision-single-item-02 .content .readmore {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--secondary-color);
 }
@@ -6112,7 +6120,7 @@ Client Area
 .single-blog-grid-01 .content .title {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 400;
   transition: all 500ms;
 }
 .single-blog-grid-01 .content .title:hover {
@@ -6152,7 +6160,7 @@ Client Area
 .case-category-list .single-case-item .content .title {
   font-size: 26px;
   line-height: 34px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
@@ -6185,7 +6193,7 @@ Client Area
 }
 .single-catagory-item .title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -6221,7 +6229,7 @@ Client Area
   text-align: center;
   font-size: 18px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: var(--heading-font);
@@ -6284,7 +6292,7 @@ Client Area
   line-height: 34px;
   color: var(--heading-color);
   font-family: var(--heading-font);
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   transition: all 500ms;
 }
@@ -6342,7 +6350,7 @@ Client Area
 .idology-single-item-02 .content .title {
   color: #fff;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 .idology-single-item-02 .content p {
@@ -6350,7 +6358,7 @@ Client Area
   margin-bottom: 15px;
 }
 .idology-single-item-02 .content .btn-wrapper .read-btn {
-  font-weight: 700;
+  font-weight: 400;
 }
 .idology-single-item-02 .content .btn-wrapper .read-btn i {
   margin-left: 10px;
@@ -6414,7 +6422,7 @@ Client Area
 .idology-single-item-03 .content .title {
   color: #fff;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 .idology-single-item-03 .content p {
@@ -6422,7 +6430,7 @@ Client Area
   margin-bottom: 15px;
 }
 .idology-single-item-03 .content .btn-wrapper .read-btn {
-  font-weight: 700;
+  font-weight: 400;
 }
 .idology-single-item-03 .content .btn-wrapper .read-btn i {
   margin-left: 10px;
@@ -6481,7 +6489,7 @@ Client Area
 .contribute-single-item .thumb .thumb-content .goal .raised {
   color: #fff;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: var(--body-font);
 }
 .contribute-single-item .content {
@@ -6494,7 +6502,7 @@ Client Area
 }
 .contribute-single-item .content .title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 34px;
   margin-bottom: 23px;
 }
