@@ -1,4 +1,8 @@
 @media only screen and (min-width: 1601px) and (max-width: 1850px) {
+  .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
+    color: #fff;
+    font-size: 1.5rem;
+  }
   .care-calendar .owl-dots {
     display: block;
     width: 60%;
@@ -31,6 +35,10 @@
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
+    color: #fff;
+    font-size: 1.5rem;
+  }
   .care-calendar .owl-dots {
     display: block;
     width: 60%;
@@ -63,6 +71,10 @@
 }
 
 @media only screen and (min-width: 1367px) and (max-width: 1399px) {
+  .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
+    font-size: 1.5rem;
+    color: white;
+  }
   .care-calendar .owl-dots {
     display: block;
     width: 60%;
@@ -95,6 +107,10 @@
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
+    color: white;
+    font-size: 1.5rem;
+  }
   .testimonialpicbx .mobile {
     display: none;
   }
@@ -112,6 +128,10 @@
 /* Medium Layout: 1200px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
+    color: white;
+    font-size: 1.5rem;
+  }
   .care-calendar .owl-dots {
     display: block;
     width: 60%;

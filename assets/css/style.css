@@ -87,7 +87,7 @@ Version: 1.0.0
   --heading-color: #000000;
   --paragraph-color: #7e7e7e;
   --heading-font: "Playfair Display", Neuton;
-  --body-font: "Poppins", Neuton;
+  --body-font: "Poppins", arial;
 }
 
 html {
