@@ -1,4 +1,7 @@
 @media only screen and (min-width: 1601px) and (max-width: 1850px) {
+  figure.mobileshownone {
+    display: block;
+  }
   .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
     color: #fff;
     font-size: 1.5rem;
@@ -35,6 +38,9 @@
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  figure.mobileshownone {
+    display: block;
+  }
   .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
     color: #fff;
     font-size: 1.5rem;
@@ -71,6 +77,9 @@
 }
 
 @media only screen and (min-width: 1367px) and (max-width: 1399px) {
+  figure.mobileshownone {
+    display: block;
+  }
   .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
     font-size: 1.5rem;
     color: white;
@@ -107,6 +116,9 @@
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
+  figure.mobileshownone {
+    display: block;
+  }
   .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
     color: white;
     font-size: 1.5rem;
@@ -128,6 +140,9 @@
 /* Medium Layout: 1200px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  figure.mobileshownone {
+    display: block;
+  }
   .navbar-area.nav-style-02 .nav-container .navbar-collapse .navbar-nav li a {
     color: white;
     font-size: 1.5rem;
